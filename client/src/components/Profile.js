@@ -10,7 +10,7 @@ export default function Profile({user}) {
   const [location, setLocation] = useState(user.location)
   const [birthday, setBirthday] = useState(user.birthday)
   const [posts, setPosts] = useState([])
-  console.log(user)
+  // console.log(user)
 
   function handleUpdate() {
     setUpdating(!updating)
@@ -65,6 +65,8 @@ export default function Profile({user}) {
       setAvatar(data.avatar)
     })
   }
+  
+ 
 
   useEffect(() => {
     fetch(`/posts/${user.id}`, {
@@ -80,6 +82,7 @@ export default function Profile({user}) {
     })
     }, [])
 
+  
   return (
     <div>
     <div className="profile">
