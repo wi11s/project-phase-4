@@ -55,6 +55,8 @@ body {
   left: 30%;
   right: 30%;
   overflow-wrap: break-word;
+   height: fit-content;
+  width: fit-content;
 }
 
 .postContent {
@@ -235,7 +237,6 @@ body {
 
 .btn-secondary {
   position: sticky;
-  margin-bottom: 20%;
 }
 
 
@@ -277,6 +278,7 @@ body {
   margin-right: 30%;
   overflow-wrap: break-word;
   padding: 2%;
+  
 }
 
 .search {
@@ -301,6 +303,9 @@ body {
 
 .profile {
   padding: 3%;
+  display: block;
+  overflow: auto;
+  /* width: fit-content; */
 }
 
 .updateProfileForm {
